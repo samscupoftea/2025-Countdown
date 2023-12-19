@@ -4,9 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Time Since Calculator</title>
   </head>
   <body>
+    <h1 class="maintitle">TIME SINCE</h1>
+    <div class="countdown-container">
+      <div class="days-c"></div>
+      <p class="description-text" id="days"></p>
+      <span>Days</span>
+
+      <div class="days-c"></div>
+      <p class="description-text" id="days"></p>
+      <span>Days</span>
+
+      <div class="hours-c"></div>
+      <p class="description-text" id="hours"></p>
+      <span>Hours</span>
+
+      <div class="minutes-c"></div>
+      <p class="description-text" id="minutes"></p>
+      <span>Minutes</span>
+
+      <div class="Seconds-c"></div>
+      <p class="description-text" id="Seconds"></p>
+      <span>Seconds</span>
+    </div>
+
+    <form select="selection">
+      <label for="events">Choose event</label>
+      <select name="events" id="events">
+        <option value="Christmas">Christmas</option>
+        <option value="Easter">Easter</option>
+        <option value="Halloween">Halloween</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
     <script src="./index.js"></script>
   </body>
 </html>
