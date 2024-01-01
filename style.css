@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+
+    font-family: 'Averia Serif Libre', serif;
+font-family: 'Offside', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+}
+
+
 body {
     background-color: darkgray;
     background-image: url(./images/moment-player.jpg);
@@ -11,23 +20,82 @@ body {
     justify-content: center;
 
 }
-* {
-    box-sizing: border-box;
-  
-}
-.countdown-container {
-display: flex;
 
-}
+
 h1{
     font-size: 5rem;
     color: white;
+    margin-top: -1rem;
+}
+.countdown-container {
+    display: flex;
+   
+    
+    background-color: rgba(128, 128, 128, 0.5);
+   
+
+    
+    }
+
+
+
+.description-text {
+    font-size: 5rem;
+    color: white;
+    line-height: 1;
+    margin: 0 2rem;
+    text-align: center;
+  
+    
 }
 
-
-span{
-    font-size: 2rem;
+span {
     color: white;
-    justify-content: space-evenly;
-    width: 9rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin:  2rem;
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+form {
+
+    text-align: center; /* Center the form content */
+    margin: 0 auto; /* Center the form in the page */
+    display: inline; /* Ensure the form takes a block level */
+}
+  
+form label{
+    text-align: center;
+    color: white;
+}
+form select, form input {
+    font-size: 1.5rem; /* Set font size similar to the span */
+    color: rgb(38, 29, 29); /* Set text color */
+    margin: 0.5rem; /* Space out the elements */
+    display: block; /* Make each form element take a new line */
+    align-items: center;
+    text-align: center;
+}
+
+/* Align the submit button */
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #2667ff; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
 }
